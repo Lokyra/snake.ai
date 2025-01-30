@@ -1,4 +1,7 @@
 pygame
+numpy
 torch 
 torchvision 
 torchaudio
+IPython
+matplotlib
