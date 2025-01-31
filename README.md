@@ -16,6 +16,9 @@ Snake AI is an implementation of the classic Snake game with a reinforcement lea
 - Performance tracking with matplotlib
 - Both human playable and AI training modes
 
+## Demo
+https://github.com/user-attachments/assets/177f469d-afe3-4886-83ba-a122f4cde06e
+
 ## Learning Process
 
 ```mermaid
@@ -61,7 +64,9 @@ The agent uses an epsilon-greedy strategy for exploration :
 - Trains in both short-term and long-term memory phases
 
 
-  
+
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -73,3 +78,5 @@ The agent uses an epsilon-greedy strategy for exploration :
 - Matplotlib
 - NumPy
 - Python3-tk
+
+
