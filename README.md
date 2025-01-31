@@ -59,6 +59,8 @@ The agent uses an epsilon-greedy strategy for exploration :
 - Gradually transitions to exploitation of learned patterns
 - Stores experiences in memory
 - Trains in both short-term and long-term memory phases
+
+
   
 ## Getting Started
 
