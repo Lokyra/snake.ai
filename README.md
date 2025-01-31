@@ -64,9 +64,6 @@ The agent uses an epsilon-greedy strategy for exploration :
 - Trains in both short-term and long-term memory phases
 
 
-
-
-
 ## Getting Started
 
 ### Prerequisites
@@ -78,5 +75,13 @@ The agent uses an epsilon-greedy strategy for exploration :
 - Matplotlib
 - NumPy
 - Python3-tk
+```
 
+### Run the project
+
+```
+git clone git@github.com:Lokyra/snake.ai.git
+cd snake.ai
+python src/agent.py
+```
 
