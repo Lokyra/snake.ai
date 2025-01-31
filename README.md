@@ -16,6 +16,50 @@ Snake AI is an implementation of the classic Snake game with a reinforcement lea
 - Performance tracking with matplotlib
 - Both human playable and AI training modes
 
+## Learning Process
+
+```mermaid
+flowchart TD
+    A[Game State] --> B[Agent Gets State]
+    B --> C[State Processing]
+    C -->|11 Input Values| D[Neural Network]
+    D --> E{Action Selection}
+    E -->|Exploration| F[Random Move]
+    E -->|Exploitation| G[Predicted Best Move]
+    F --> H[Execute Action]
+    G --> H
+    H --> I[Get Reward]
+    I --> J{Game Over?}
+    J -->|Yes| K[Train Long Memory]
+    J -->|No| L[Train Short Memory]
+    K --> M[Reset Game]
+    L --> N[Update State]
+    M --> A
+    N --> A
+    
+    subgraph "State Values"
+    SV1[Danger Straight]
+    SV2[Danger Right]
+    SV3[Danger Left]
+    SV4[Direction]
+    SV5[Food Location]
+    end
+    
+    subgraph "Rewards"
+    R1[Eat Food: +10]
+    R2[Game Over: -10]
+    R3[Survive: 0]
+    end
+```
+## Traning process 
+
+The agent uses an epsilon-greedy strategy for exploration :
+
+- Initial random moves for exploration
+- Gradually transitions to exploitation of learned patterns
+- Stores experiences in memory
+- Trains in both short-term and long-term memory phases
+  
 ## Getting Started
 
 ### Prerequisites
